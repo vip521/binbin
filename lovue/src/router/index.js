@@ -11,6 +11,7 @@ import Ziji from "@/components/ziji";
 import CityFirst from "@/views/citys/cityFirst"
 import Cityserch from "@/views/citys/cityserch"
 import CityInfor from "@/views/citys/cityInfor"
+import Denglu from "@/views/citys/denglu"
 Vue.use(Router);
 
 export default new Router({
@@ -24,6 +25,11 @@ export default new Router({
       path: "/cityFirst",
       name: "cityFirst",
       component: CityFirst
+    },
+    {
+      path:"/denglu",
+      name: "denglu",
+      component: Denglu
     },
     {
       path: "/cityserch",

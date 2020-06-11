@@ -4,7 +4,7 @@
     
     <div class="headTop">
         <span>ele.me</span>
-        <span>登录/注册</span>
+        <span @click="login">登录/注册</span>
     </div>
     <div class="headCenter">
         <p>
@@ -53,6 +53,12 @@ export default {
         this.AllCity()
     },
     methods:{
+        login(){
+            console.log("进入登录页面")
+             this.$router.push({
+                name:"denglu"
+            })
+        },
         Gonext(v){
             console.log("调到下一级页面")
             this.$router.push({
